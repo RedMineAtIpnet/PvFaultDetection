@@ -8,3 +8,11 @@ ________________________________________________________________________________
 this project contains two parts:
 - the first part is the collection and sending of data by Arduino boards
 - the second is the processing of this data to detect and identify the failure
+# Data collection
+In order to determine the state of each photo-voltaic panel, we have to measure the current flowing in the circuit, the voltage at the terminals of each panel and the intensity of sunshine arriving on the field. For this reason, we thought to use the Arduino micro-controller for its simplicity to use and its large platform which contains all the libraries that we need for these measurements.
+In fact, these measurements will be taken by the following sensors:
+- the light sensor GY-30.
+- the ACS712 current sensor.
+
+And for the voltage, it will be measured by the analog inputs of the Arduino board following a set of operations allowing the adaptation of the potential difference arrieved between the GND port and these inputs. the circuit of these operations is detailed in the proteus project 
+The recovered data will be sent by a CC1101 module.
